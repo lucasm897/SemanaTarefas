@@ -21,3 +21,5 @@ Promise: é uma espera de retorno para o sistema
 Asincrona: é aguardado uma ação
 
 Spread Operator: choices: [...metas]
+
+Será
