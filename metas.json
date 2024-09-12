@@ -1,10 +1,18 @@
 [
   {
     "value": "Tomar 3L de água por dia",
+    "checked": true
+  },
+  {
+    "value": "Nuossa",
     "checked": false
   },
   {
-    "value": "Pourra",
+    "value": "Vai",
+    "checked": false
+  },
+  {
+    "value": "Ta bom",
     "checked": true
   }
 ]

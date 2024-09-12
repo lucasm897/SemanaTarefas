@@ -1,38 +1,3 @@
-// const mensagem = "WOUDY!"
-
-// {
-//    const mensagem = "Olá"
-// }
-
-// console.log(mensagem);
-// console.log(mensagem);
-
-// let concat = ["Bike", "Two"]
-// console.log(concat[1]+concat[0])
-
-// let meta = {
-//     value: 'ler mais de um livro no mês',
-//     check: false,
-//     isChecked:(info) => {
-//         console.log(info)
-//     }
-
-// }
-
-// console.log(meta.value)
-// meta.isChecked(meta.value)
-
-// let metas =[
-//     meta,{
-//         value: "caminhar mais de 20 minutos",
-//         check: false
-//     }
-// ]
-
-// console.log(metas[1].value)
-
-
-
 const { select,input, checkbox } =  require('@inquirer/prompts')
 const fs = require("fs").promises
 
@@ -69,7 +34,7 @@ const cadastrarMeta = async () => {
 }
 
 const listarMetas = async () => {
-    if(meta.length == 0){
+    if(metas.length == 0){
         mensagem = "Não existe metas."
         return
     }
@@ -104,12 +69,12 @@ const listarMetas = async () => {
 }
 
 const metasRealizadas = async () =>{
-    if(meta.length == 0){
+    if(metas.length == 0){
         mensagem = "Não existe metas."
         return
     }
     
-    const  realizadas = metas.filter((metas) => {
+    const  realizadas = metas.filter((meta) => {
         return meta.checked == true
     })
 
@@ -124,7 +89,7 @@ const metasRealizadas = async () =>{
 }
 
 const metasAbertas = async () => {
-    if(meta.length == 0){
+    if(metas.length == 0){
         mensagem = "Não existe metas."
         return
     }
@@ -145,7 +110,7 @@ const metasAbertas = async () => {
 }
 
 const deletarMetas = async () => {
-    if(meta.length == 0){
+    if(metas.length == 0){
         mensagem = "Não existe metas."
         return
     }
@@ -172,7 +137,7 @@ const deletarMetas = async () => {
     }
 
     itensADeletar.forEach((item) =>{
-        metas = metas.filter(() =>{
+        metas = metas.filter((meta) =>{
             return meta.value != item
         })
     })
@@ -253,3 +218,35 @@ start()
 carregarMetas()
 
 
+// const mensagem = "WOUDY!"
+
+// {
+//    const mensagem = "Olá"
+// }
+
+// console.log(mensagem);
+// console.log(mensagem);
+
+// let concat = ["Bike", "Two"]
+// console.log(concat[1]+concat[0])
+
+// let meta = {
+//     value: 'ler mais de um livro no mês',
+//     check: false,
+//     isChecked:(info) => {
+//         console.log(info)
+//     }
+
+// }
+
+// console.log(meta.value)
+// meta.isChecked(meta.value)
+
+// let metas =[
+//     meta,{
+//         value: "caminhar mais de 20 minutos",
+//         check: false
+//     }
+// ]
+
+// console.log(metas[1].value)
