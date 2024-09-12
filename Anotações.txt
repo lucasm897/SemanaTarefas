@@ -1,1 +1,23 @@
 terminal -> git bash
+
+git init
+
+ctrl+L limpa terminal
+
+{} - Determina um novo escopo, não pode ser usadava variáveis fora
+
+Concatenação: +
+
+Uma forma de escrever função diferente: const start = () => {}
+
+Pegar um modulo de uma biblioteca baixada: const { select /*qual modulo*/} =  require('@inquirer/prompts')/* de onde o modulo*/
+
+No package.json : "type": "commonjs", /*alterado de "module", tava dando erro no require*/
+
+await: define que vai ter uma promise
+
+Promise: é uma espera de retorno para o sistema
+
+Asincrona: é aguardado uma ação
+
+Spread Operator: choices: [...metas]
